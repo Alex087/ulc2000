@@ -1,0 +1,80 @@
+.header-bkg {
+
+    background-color:cornflowerblue;
+    height: 40px;
+}
+
+.carousel-caption1 {
+    position: absolute;
+    
+    bottom: 0px;
+    left: 15%;
+    z-index: 10;
+    margin-bottom: 30%;
+    color: rgb(0, 0, 0);
+    
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    
+}
+
+.carousel-caption2 {
+    position: absolute;
+    
+    bottom: 0px;
+    left: 15%;
+    z-index: 10;
+    margin-bottom: 30%;
+    color: rgb(0, 0, 0);
+    background: url(../images/white.png);
+    
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    
+}
+
+.carousel-caption3 {
+    position: absolute;
+    bottom: 0px;
+    left: 15%;
+    z-index: 10;
+    margin-bottom: 30%;
+    color: rgb(0, 0, 0);
+    background: url(../images/white.png);
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    
+}
+
+.why-us {
+    margin-top: 35px;
+    margin-bottom: 55px;
+    font-family: 'Comfortaa';
+}
+
+.why-us-img1 {
+  
+}
+
+.compatibilities {
+    margin-top: 55px;
+    margin-bottom: 75px;
+    font-family: 'Comfortaa';
+
+}
+.otstup {
+    margin-top: 35px;
+    margin-left: 5rem;
+    font-size: 23px;
+
+}
+
+.contacts {
+    font-family: 'Comfortaa';
+    background: rgba(159, 162, 163, 0.164);   
+}
+
+.site-font {
+    font-family: 'Comfortaa';
+
+}
