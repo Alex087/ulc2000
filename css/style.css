@@ -52,8 +52,8 @@
     font-family: 'Comfortaa';
 }
 
-.why-us-img1 {
-  
+#whyus3 {
+    
 }
 
 .compatibilities {
@@ -64,6 +64,7 @@
 
 }
 .otstup {
+    height: 430px;
     margin-top: 55px;
     margin-bottom: 75px;
     background: url(../images/gift2.png);

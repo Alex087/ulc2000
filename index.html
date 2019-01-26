@@ -78,7 +78,7 @@
             </div>
         </div>
         <div class="row site-font">
-            <div class="col-lg-4">
+            <div class="col-lg-4" id="whyus1">
                 <div class="why-us-img1">
                     <center>
                         <img src="images/plane.jpg" width="200px" height="200px" class="rounded-circle">
@@ -88,7 +88,7 @@
                 <br>
                 <center>Большой опыт работы</center>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4" id="whyus2">
                 <div class="why-us-img1">
                     <center>
                         <img src="images/train.jpg" width="200px" height="200px" class="rounded-circle">
@@ -97,7 +97,7 @@
                 <br>
                 <center>Высокая скорость доставки</center>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4" id="whyus3">
                 <div class="why-us-img1">
                     <center>
                         <img src="images/trailer.jpg" width="200px" height="200px" class="rounded-circle">
@@ -125,24 +125,18 @@
             
                 <div class="otstup">
                         <div class="row d-flex justify-content-end">
-                   <img src="images/grass.png" class="rounded float-right" style="margin-bottom:85px;">
+                   <img id="capabl1" src="images/grass.png" class="rounded float-right" style="margin-bottom:85px;">
                         </div>
                     
                     <div class="row d-flex justify-content-start">
-                    <img src="images/sunset.png" style="margin-bottom:85px;" class="rounded float-left">
+                    <img id="capabl2" src="images/sunset.png" style="margin-bottom:85px;" class="rounded float-left">
                     </div>
                     
                     <div class="row d-flex justify-content-end">
-                    <img src="images/ocean.png" class="rounded float-right">
+                    <img id="capabl3" src="images/ocean.png" class="rounded float-right">
                 </div>
             </div>
 
-            
-            
-        
-
-
-    
     <!--END COMPATIBILITIES-->
 
     <!-- FOOTER-->
@@ -187,13 +181,67 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 
+
+        <script>
+        $(document).ready(function(){ 
+            $(window).scroll(function () {
+                
+                if ($(this).scrollTop() > 400) {
+                $('#whyus1').fadeIn("slow");
+            } else {
+                $('#whyus1').fadeOut();
+            }
+
+            if ($(this).scrollTop() > 450) {
+                
+                $('#whyus2').fadeIn("slow");
+            } else {
+                $('#whyus2').fadeOut();
+            } 
+
+            if ($(this).scrollTop() > 500) {
+                
+                $('#whyus3').fadeIn("slow");
+            } else {
+                $('#whyus3').fadeOut();
+            }
+            
+            
+            if ($(this).scrollTop() > 990) {
+                $('#capabl1').fadeIn("slow");
+            } else {
+                $('#capabl1').fadeOut();
+            }
+
+            if ($(this).scrollTop() > 1150) {
+                $('#capabl2').fadeIn("slow");
+            } else {
+                $('#capabl2').fadeOut();
+            }
+
+            if ($(this).scrollTop() > 1250) {
+                $('#capabl3').fadeIn("slow");
+            } else {
+                $('#capabl3').fadeOut();
+            }
+            $topOffset = $(this).scrollTop();
+            console.log($topOffset);
+        });
+
+
+
+
+
+        });
+        
+        
+         </script>
 </body>
 
 </html>
