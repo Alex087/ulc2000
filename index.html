@@ -66,7 +66,7 @@
     </div>
     <!-- END SLIDER-->
     <!--WHY US-->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
                 <div class="why-us">
@@ -113,7 +113,7 @@
     </div>
     <!--END WHY US-->
     <!--COMPATIBILITIES-->
-    <div class="container compatibilities">
+    <div class="container-fluid compatibilities">
         <div class="row">
             <div class="col-lg-12">
                 <h1>
@@ -136,6 +136,7 @@
                     <img id="capabl3" src="images/ocean.png" class="rounded float-right">
                 </div>
             </div>
+            
 
     <!--END COMPATIBILITIES-->
 
@@ -190,22 +191,27 @@
 
         <script>
         $(document).ready(function(){ 
+            var wh = $(document).height();
             $(window).scroll(function () {
+                var st = $(this).scrollTop();
+                var perc = (st*100)/wh;
+                console.log('The percentage is '+perc);
                 
-                if ($(this).scrollTop() > 400) {
+
+                if (perc > 15) {
                 $('#whyus1').fadeIn("slow");
             } else {
                 $('#whyus1').fadeOut();
             }
 
-            if ($(this).scrollTop() > 450) {
+            if (perc > 19) {
                 
                 $('#whyus2').fadeIn("slow");
             } else {
                 $('#whyus2').fadeOut();
             } 
 
-            if ($(this).scrollTop() > 500) {
+            if (perc > 25) {
                 
                 $('#whyus3').fadeIn("slow");
             } else {
@@ -213,19 +219,19 @@
             }
             
             
-            if ($(this).scrollTop() > 990) {
+            if (perc > 46) {
                 $('#capabl1').fadeIn("slow");
             } else {
                 $('#capabl1').fadeOut();
             }
 
-            if ($(this).scrollTop() > 1150) {
+            if (perc > 55) {
                 $('#capabl2').fadeIn("slow");
             } else {
                 $('#capabl2').fadeOut();
             }
 
-            if ($(this).scrollTop() > 1200) {
+            if (perc > 57) {
                 $('#capabl3').fadeIn("slow");
             } else {
                 $('#capabl3').fadeOut();
