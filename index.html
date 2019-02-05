@@ -121,22 +121,22 @@
                 </h1>
             </div>
         </div>
-    </div>    
-            
-                <div class="otstup">
-                        <div class="row d-flex justify-content-end">
-                   <img id="capabl1" src="images/grass.png" class="rounded float-right" style="margin-bottom:85px;">
-                        </div>
-                    
-                    <div class="row d-flex justify-content-start">
-                    <img id="capabl2" src="images/sunset.png" style="margin-bottom:85px;" class="rounded float-left">
-                    </div>
-                    
-                    <div class="row d-flex justify-content-end">
-                    <img id="capabl3" src="images/ocean.png" class="rounded float-right">
-                </div>
-            </div>
-            
+    </div>
+
+    <div class="otstup">
+        <div class="row d-flex justify-content-end">
+            <img id="capabl1" src="images/grass.png" class="rounded float-right" style="margin-bottom:85px;">
+        </div>
+
+        <div class="row d-flex justify-content-start">
+            <img id="capabl2" src="images/sunset.png" style="margin-bottom:85px;" class="rounded float-left">
+        </div>
+
+        <div class="row d-flex justify-content-end">
+            <img id="capabl3" src="images/ocean.png" class="rounded float-right">
+        </div>
+    </div>
+
 
     <!--END COMPATIBILITIES-->
 
@@ -182,67 +182,69 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 
 
-        <script>
-        $(document).ready(function(){ 
+    <script>
+        $(document).ready(function () {
             var wh = $(document).height();
             $(window).scroll(function () {
                 var st = $(this).scrollTop();
-                var perc = (st*100)/wh;
-                console.log('The percentage is '+perc);
-                
+                var perc = (st * 100) / wh;
+                console.log('The percentage is ' + perc);
+
 
                 if (perc > 15) {
-                $('#whyus1').fadeIn("slow");
-            } else {
-                $('#whyus1').fadeOut();
-            }
+                    $('#whyus1').fadeIn("slow");
+                } else {
+                    $('#whyus1').fadeOut();
+                }
 
-            if (perc > 19) {
-                
-                $('#whyus2').fadeIn("slow");
-            } else {
-                $('#whyus2').fadeOut();
-            } 
+                if (perc > 19) {
 
-            if (perc > 25) {
-                
-                $('#whyus3').fadeIn("slow");
-            } else {
-                $('#whyus3').fadeOut();
-            }
-            
-            
-            if (perc > 46) {
-                $('#capabl1').fadeIn("slow");
-            } else {
-                $('#capabl1').fadeOut();
-            }
+                    $('#whyus2').fadeIn("slow");
+                } else {
+                    $('#whyus2').fadeOut();
+                }
 
-            if (perc > 55) {
-                $('#capabl2').fadeIn("slow");
-            } else {
-                $('#capabl2').fadeOut();
-            }
+                if (perc > 25) {
 
-            if (perc > 57) {
-                $('#capabl3').fadeIn("slow");
-            } else {
-                $('#capabl3').fadeOut();
-            }
-            
+                    $('#whyus3').fadeIn("slow");
+                } else {
+                    $('#whyus3').fadeOut();
+                }
+
+
+                if (perc > 46) {
+                    $('#capabl1').fadeIn("slow");
+                } else {
+                    $('#capabl1').fadeOut();
+                }
+
+                if (perc > 55) {
+                    $('#capabl2').fadeIn("slow");
+                } else {
+                    $('#capabl2').fadeOut();
+                }
+
+                if (perc > 57) {
+                    $('#capabl3').fadeIn("slow");
+                } else {
+                    $('#capabl3').fadeOut();
+                }
+
+            });
+
         });
 
-        });
-        
-        
-         </script>
+
+    </script>
+
 </body>
 
 </html>
